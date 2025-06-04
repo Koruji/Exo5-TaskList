@@ -1,0 +1,25 @@
+.task-item {
+background-color: #d69b66;
+padding: 2rem;
+border-radius: 16px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+margin: 1rem 0;
+transition: box-shadow 0.3s ease;
+}
+
+.task-item h1 {
+margin-top: 0;
+margin-bottom: 1rem;
+font-size: 1.75rem;
+color: #343a40;
+}
+
+.task-item a {
+text-decoration: none;
+color: #9f6836;
+font-weight: bold;
+}
+
+.task-item a:hover {
+text-decoration: underline;
+}

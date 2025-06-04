@@ -1,6 +1,7 @@
 import { NavLink, useParams } from "react-router";
 import type { Task } from "~/models/task.interface";
 import { tasks } from "app/store/task-datas";
+import "./TaskDetailsView.css";
 
 export default function TaskDetailsView() {
     const params = useParams();
@@ -15,9 +16,11 @@ export default function TaskDetailsView() {
                 <NavLink to="/">Retour au menu</NavLink>
             </section>
         ) : (
-            <section>
+            <section className="task-item">
                 <h1>{task.titre}</h1>
+                <p><strong>Description :</strong></p>
                 <p>{task.description}</p>
+                <NavLink to="/">Retour</NavLink>
             </section>
         )
     );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import type { Task } from "~/models/task.interface";
 import { tasks } from "~/store/task-datas";
+import "./TaskView.css";
 
 export default function TaskView() {
 
@@ -13,9 +14,9 @@ export default function TaskView() {
         {taskList.length === 0 ? (
             <p>Aucune tâches n'a été trouvé !</p>
         ) : (
-            <ul>
+            <ul className="task-list">
                 {taskList.map((task) => (
-                    <li>{task.titre} - <NavLink to={`/task/${task.id}`}>Voir plus</NavLink></li>
+                    <li className="task-item">{task.titre} <NavLink to={`/task/${task.id}`}>Voir plus</NavLink></li>
                 ))}
             </ul>
         )}
