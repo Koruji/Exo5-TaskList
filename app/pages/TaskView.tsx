@@ -12,7 +12,7 @@ export default function TaskView() {
         <>
         <h1>Liste de tâches</h1>
         {taskList.length === 0 ? (
-            <p>Aucune tâches n'a été trouvé !</p>
+            <p>Aucune tâche n'a été trouvé !</p>
         ) : (
             <ul className="task-list">
                 {taskList.map((task) => (

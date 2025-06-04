@@ -1,4 +1,3 @@
-import MainNav from "~/navigation/MainNav";
 import "./Header.css";
 
 interface HeaderI {
