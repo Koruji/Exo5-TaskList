@@ -15,7 +15,7 @@ export default function TaskView() {
         ) : (
             <ul>
                 {taskList.map((task) => (
-                    <li>{task.titre} - <NavLink to="/">Voir plus</NavLink></li>
+                    <li>{task.titre} - <NavLink to={`/task/${task.id}`}>Voir plus</NavLink></li>
                 ))}
             </ul>
         )}
